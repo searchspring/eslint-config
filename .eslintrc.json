@@ -1,0 +1,14 @@
+{
+	"plugins": ["sort-keys-fix"],
+	"extends": [
+		"airbnb-base",
+		"plugin:prettier/recommended",
+		"plugin:unicorn/recommended",
+		"prettier",
+		"prettier/unicorn"
+	],
+	"rules": {
+		"indent": ["error", "tab"],
+		"sort-keys-fix/sort-keys-fix": "error"
+	}
+}
