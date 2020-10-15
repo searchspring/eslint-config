@@ -16,7 +16,6 @@ module.exports = {
 		'plugin:lodash/recommended',
 		'plugin:mocha/recommended',
 		'plugin:unicorn/recommended',
-		'plugin:jsdoc/recommended',
 		'prettier',
 		'prettier/unicorn',
 	],
@@ -29,7 +28,7 @@ module.exports = {
 		},
 	],
 	parserOptions: {
-		ecmaVersion: 9,
+		ecmaVersion: 10,
 	},
 	plugins: ['sonarjs', 'mocha', 'lodash', 'no-secrets', 'sort-keys-fix'],
 	rules: {
@@ -55,9 +54,6 @@ module.exports = {
 		],
 		'import/prefer-default-export': 'off',
 		indent: ['error', 'tab'],
-		'jsdoc/no-undefined-types': 'off',
-		'jsdoc/require-param-description': 'off',
-		'jsdoc/require-returns-description': 'off',
 		'lodash/import-scope': ['error', 'member'],
 		'lodash/prefer-constant': 'off',
 		'lodash/prefer-includes': 'off',
@@ -111,15 +107,6 @@ module.exports = {
 		'promise/catch-or-return': 'off',
 		'quote-props': ['error', 'as-needed'],
 		quotes: ['warn', 'single'],
-		'require-jsdoc': [
-			'error',
-			{
-				require: {
-					ClassDeclaration: true,
-					MethodDefinition: true,
-				},
-			},
-		],
 		'sonarjs/no-duplicate-string': 'off',
 		strict: ['error', 'global'],
 		'unicorn/consistent-function-scoping': 'off',
