@@ -29,7 +29,7 @@ module.exports = {
 	parserOptions: {
 		ecmaVersion: 10,
 	},
-	plugins: ['sonarjs', 'mocha', 'lodash', 'no-secrets', 'sort-keys-fix'],
+	plugins: ['sonarjs', 'mocha', 'no-secrets', 'sort-keys-fix'],
 	rules: {
 		'arrow-parens': ['error', 'always'],
 		'callback-return': 'error',
