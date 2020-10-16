@@ -45,7 +45,7 @@ module.exports = {
 			},
 		],
 		'import/prefer-default-export': 'off',
-		indent: ['error', 'tab'],
+		indent: ['error', 'tab', { SwitchCase: 1 }],
 		'max-classes-per-file': 'off',
 		'max-depth': ['error', 3],
 		'max-len': [
