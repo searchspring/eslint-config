@@ -40,8 +40,8 @@
 		"eslint": "^7.2.0",
 		"fixpack": "^3.0.6",
 		"husky": "^4.2.5",
+		"lint-staged": "^10.4.1",
 		"prettier": "^2.0.5",
-		"pretty-quick": "^3.0.2",
 		"standard-version": "^9.0.0"
 	},
 	"files": [
@@ -52,7 +52,7 @@
 	"husky": {
 		"hooks": {
 			"commit-msg": "commitlint -E HUSKY_GIT_PARAMS",
-			"pre-commit": "pretty-quick --staged"
+			"pre-commit": "lint-staged"
 		}
 	},
 	"keywords": [
@@ -61,6 +61,16 @@
 		"searchspring"
 	],
 	"license": "MIT",
+	"lint-staged": {
+		"./package.json": [
+			"fixpack",
+			"prettier --write"
+		],
+		"*.{js,ts}": [
+			"prettier --write",
+			"eslint --fix"
+		]
+	},
 	"main": "index.js",
 	"peerDependencies": {
 		"eslint": "^6.0.0"
