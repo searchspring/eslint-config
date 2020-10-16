@@ -41,14 +41,7 @@ module.exports = {
 		'import/no-extraneous-dependencies': [
 			'warn',
 			{
-				devDependencies: [
-					'**/*.test.{js,ts}',
-					'**/*.spec.{js,ts}',
-					'**/*.unit.{js,ts}',
-					'**/*.it.{js,ts}',
-					'tests/**/*',
-					'test/**/*',
-				],
+				devDependencies: ['**/*.test.{js,ts}', '**/*.spec.{js,ts}', '**/*.unit.{js,ts}', '**/*.it.{js,ts}', 'tests/**/*', 'test/**/*'],
 			},
 		],
 		'import/prefer-default-export': 'off',
@@ -91,6 +84,7 @@ module.exports = {
 		'no-plusplus': 'off',
 		'no-process-env': 'error',
 		'no-process-exit': 'error',
+		'no-restricted-syntax': 'off',
 		'no-secrets/no-secrets': 'error',
 		'no-underscore-dangle': 'off',
 		'no-useless-call': 'error',
@@ -101,11 +95,9 @@ module.exports = {
 		'sonarjs/no-duplicate-string': 'off',
 		strict: ['error', 'global'],
 		'unicorn/consistent-function-scoping': 'off',
-		'unicorn/filename-case': [
-			'error',
-			{ cases: { camelCase: true, pascalCase: true } },
-		],
+		'unicorn/filename-case': ['error', { cases: { camelCase: true, pascalCase: true } }],
 		'unicorn/no-fn-reference-in-iterator': 'off',
+		'unicorn/no-for-loop': 'off',
 		'unicorn/no-null': 'off',
 		'unicorn/no-reduce': 'off',
 		'unicorn/no-useless-undefined': 'off',
