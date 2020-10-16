@@ -1,9 +1,5 @@
 # eslint-config
 
-Our style
-
-## The Style
-
 This is based on the AirBnB style guide, but includes a number of additional plugins and some custom rules for our preferences.
 
 Checkout the `index.js` for the details.
