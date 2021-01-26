@@ -12,7 +12,6 @@ Checkout the `index.js` for the details.
 - SonarJS: https://github.com/SonarSource/eslint-plugin-sonarjs
 - Promise: https://github.com/xjamundx/eslint-plugin-promise
 - Prettier-ESLint compatibility: https://github.com/prettier/eslint-config-prettier
-- Mocha: https://github.com/lo1tuma/eslint-plugin-mocha
 - Unicorn: https://github.com/sindresorhus/eslint-plugin-unicorn
 
 Occasionally look [here](https://github.com/dustinspecker/awesome-eslint) for new good stuff.

@@ -2,7 +2,6 @@ module.exports = {
 	env: {
 		browser: true,
 		jquery: true,
-		mocha: true,
 		node: true,
 	},
 	extends: [
@@ -13,7 +12,6 @@ module.exports = {
 		'plugin:sonarjs/recommended',
 		'plugin:promise/recommended',
 		'plugin:prettier/recommended',
-		'plugin:mocha/recommended',
 		'plugin:unicorn/recommended',
 		'prettier',
 		'prettier/unicorn',
@@ -29,7 +27,7 @@ module.exports = {
 	parserOptions: {
 		ecmaVersion: 10,
 	},
-	plugins: ['sonarjs', 'mocha', 'no-secrets', 'sort-keys-fix'],
+	plugins: ['sonarjs', 'no-secrets', 'sort-keys-fix'],
 	rules: {
 		'arrow-parens': ['error', 'always'],
 		'callback-return': 'error',
@@ -60,17 +58,6 @@ module.exports = {
 		],
 		'max-nested-callbacks': ['error', 5],
 		'max-params': ['error', 5],
-		'mocha/handle-done-callback': 'error',
-		'mocha/max-top-level-suites': 'off',
-		'mocha/no-exclusive-tests': 'error',
-		'mocha/no-global-tests': 'error',
-		'mocha/no-hooks-for-single-case': 'off',
-		'mocha/no-identical-title': 'error',
-		'mocha/no-mocha-arrows': 'off',
-		'mocha/no-nested-tests': 'error',
-		'mocha/no-pending-tests': 'error',
-		'mocha/no-return-and-callback': 'error',
-		'mocha/no-sibling-hooks': 'error',
 		'no-console': 'error',
 		'no-continue': 'off',
 		'no-magic-numbers': [
