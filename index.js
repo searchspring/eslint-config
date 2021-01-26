@@ -46,7 +46,7 @@ module.exports = {
 		],
 		'import/no-unresolved': 'off',
 		'import/prefer-default-export': 'off',
-		indent: ['error', 2, { SwitchCase: 1 }],
+		indent: ['error', 'tab', { SwitchCase: 1 }],
 		'max-classes-per-file': 'off',
 		'max-depth': ['error', 3],
 		'max-len': [
