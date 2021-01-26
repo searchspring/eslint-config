@@ -33,17 +33,20 @@ module.exports = {
 		'callback-return': 'error',
 		camelcase: 'warn',
 		'capitalized-comments': 'error',
+		'class-methods-use-this': 'off',
 		'eslint-comments/no-unused-disable': 'error',
 		'handle-callback-err': 'error',
 		'import/extensions': 'off',
+		'import/no-default-export': 'error',
 		'import/no-extraneous-dependencies': [
 			'warn',
 			{
 				devDependencies: ['**/*.test.{js,ts}', '**/*.spec.{js,ts}', '**/*.unit.{js,ts}', '**/*.it.{js,ts}', 'tests/**/*', 'test/**/*'],
 			},
 		],
+		'import/no-unresolved': 'off',
 		'import/prefer-default-export': 'off',
-		indent: ['error', 'tab', { SwitchCase: 1 }],
+		indent: ['error', 2, { SwitchCase: 1 }],
 		'max-classes-per-file': 'off',
 		'max-depth': ['error', 3],
 		'max-len': [
@@ -60,6 +63,7 @@ module.exports = {
 		'max-params': ['error', 5],
 		'no-console': 'error',
 		'no-continue': 'off',
+		'no-empty-function': 'off',
 		'no-magic-numbers': [
 			'error',
 			{
@@ -74,7 +78,10 @@ module.exports = {
 		'no-restricted-syntax': 'off',
 		'no-secrets/no-secrets': 'error',
 		'no-underscore-dangle': 'off',
+		'no-unused-vars': ['error', { argsIgnorePattern: '^_' }],
+		'no-use-before-define': ['error', { classes: true, functions: false, variables: true }],
 		'no-useless-call': 'error',
+		'no-useless-constructor': 'off',
 		'promise/always-return': 'off',
 		'promise/catch-or-return': 'off',
 		'quote-props': ['error', 'as-needed'],
