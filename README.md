@@ -12,7 +12,6 @@ Checkout the `index.js` for the details.
 - SonarJS: https://github.com/SonarSource/eslint-plugin-sonarjs
 - Promise: https://github.com/xjamundx/eslint-plugin-promise
 - Prettier-ESLint compatibility: https://github.com/prettier/eslint-config-prettier
-- Mocha: https://github.com/lo1tuma/eslint-plugin-mocha
 - Unicorn: https://github.com/sindresorhus/eslint-plugin-unicorn
 
 Occasionally look [here](https://github.com/dustinspecker/awesome-eslint) for new good stuff.
@@ -37,7 +36,7 @@ In order to install all the related dependencies and a typical configuration for
 npm i -D eslint husky lint-staged prettier fixpack
 ```
 
-Then update your package.json with the following:
+Then update your `package.json` with the following:
 
 ```json5
 {
@@ -60,3 +59,32 @@ Then update your package.json with the following:
 	},
 }
 ```
+
+### Additional config if you are using Mocha
+- Mocha: https://github.com/lo1tuma/eslint-plugin-mocha
+
+Update your eslint configuration with following:
+```diff
+	env: {
+		...
++		mocha: true,
+	},
+	extends: [
+		...
++		'plugin:mocha/recommended',
+	]
++	plugins: [..., 'mocha'],
+	rules: {
+		...
++		'mocha/handle-done-callback': 'error',
++		'mocha/max-top-level-suites': 'off',
++		'mocha/no-exclusive-tests': 'error',
++		'mocha/no-global-tests': 'error',
++		'mocha/no-hooks-for-single-case': 'off',
++		'mocha/no-identical-title': 'error',
++		'mocha/no-mocha-arrows': 'off',
++		'mocha/no-nested-tests': 'error',
++		'mocha/no-pending-tests': 'error',
++		'mocha/no-return-and-callback': 'error',
++		'mocha/no-sibling-hooks': 'error',
+	}
