@@ -1,7 +1,7 @@
 {
 	"name": "@searchspring/eslint-config",
 	"description": "Our style",
-	"version": "1.0.8",
+	"version": "2.0.0",
 	"author": "Eric Hacke",
 	"bugs": {
 		"url": "https://github.com/searchspring/eslint-config/issues"
